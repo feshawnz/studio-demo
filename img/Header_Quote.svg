@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<svg width="71px" height="66px" viewBox="0 0 71 66" version="1.1" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+    <!-- Generator: Sketch 42 (36781) - http://www.bohemiancoding.com/sketch -->
+    <title>Header_Quote</title>
+    <desc>Created with Sketch.</desc>
+    <defs></defs>
+    <g id="Page-1" stroke="none" stroke-width="1" fill="none" fill-rule="evenodd">
+        <g id="Web-Copy-3" transform="translate(-1351.000000, -693.000000)" fill-rule="nonzero" fill="#CB2F30">
+            <g id="Header" transform="translate(-87.000000, 88.000000)">
+                <g id="Header_Quote" transform="translate(1473.500000, 638.000000) scale(-1, 1) translate(-1473.500000, -638.000000) translate(1438.000000, 605.000000)">
+                    <path d="M24.2686589,59.9757429 L29.8811401,65.0859107 L29.8811401,0 L0,0 L0,0 C0,23.779058 9.03307282,46.1026885 24.2686589,59.9757429 M41.1188599,0 L41.1188599,0 L71,0 L71,65.0859107 L65.3875188,59.9757429 C50.1519327,46.1026885 41.1188599,23.779058 41.1188599,0" id="Shape"></path>
+                </g>
+            </g>
+        </g>
+    </g>
+</svg>

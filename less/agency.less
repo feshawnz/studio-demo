@@ -1,0 +1,1086 @@
+@import "variables.less";
+@import "mixins.less";
+// Global Components
+body {
+    overflow-x: hidden;
+    .body-font;
+    font-family: OpenSans-Regular;
+}
+
+section {
+    // padding: 100px 0;
+    h2.section-heading {
+        margin-top: 0;
+        margin-bottom: 15px;
+    }
+    h3.section-subheading {
+        .serif-font;
+        text-transform: none;
+        font-style: italic;
+        margin-bottom: 75px;
+    } 
+}
+
+.previousicon {
+    display: block;
+    height: auto;
+}
+
+.previousicon:before {
+    content: '';
+    background: url('../img/Clients_Arrow.svg');
+    background-size: cover;
+    position: absolute;
+    width: 40px;
+    height: 132px;
+    margin-left: -20px;
+}
+
+.nexticon {
+    display: block;
+}
+
+.nexticon:before {
+    content: '';
+    background: url('../img/Clients_Arrow.svg');
+    background-size: cover;
+    position: absolute;
+    width: 40px;
+    height: 132px;
+    margin-left: -20px;
+    transform: rotate(180deg);
+}
+
+.text-muted {
+    color: @gray-light;
+}
+
+.text-primary {
+    color: @theme-primary;
+}
+
+p {
+    font-size: 15px;
+    line-height: 30px;
+    letter-spacing: 0.75px;
+}
+
+p.large {
+    font-size: 17px;
+}
+
+a,
+a:hover,
+a:focus,
+a:active,
+a.active {
+    outline: none;
+}
+
+a {
+    color: @theme-primary;
+}
+
+a:hover,
+a:focus,
+a:active,
+a.active {
+    color: rgb(203, 47, 48);
+    text-decoration: none;
+}
+
+h1,
+h2,
+h3,
+h4,
+h5,
+h6 {
+    font-family: openSans-Regular;
+    .heading-font;
+    font-weight: 700;
+}
+
+.img-centered {
+    margin: 0 auto;
+}
+
+.bg-light-gray {
+    background-color: @gray-lighter;
+}
+
+.bg-darkest-gray {
+    background-color: @gray-darker;
+}
+
+// Restyled Primary Buttons
+.btn-primary {
+    .button-variant(white;
+    @theme-primary;
+    @theme-primary);
+    .heading-font;
+    font-weight: 700;
+}
+
+.btn-xl {
+    .button-variant(white;
+    @theme-primary;
+    @theme-primary);
+    .heading-font;
+    font-weight: 700;
+    border-radius: 3px;
+    font-size: 18px;
+    padding: 20px 40px;
+}
+
+// Custom Navigation Bar
+.navbar-custom {
+    background-color: white;
+    border-color: transparent;
+    .babuheaders {
+        float: left;
+        line-height: 20px;
+    }
+    .navbar-brand {
+        color: @theme-primary;
+        font-family: monospace;
+        .script-font;
+        &:hover,
+        &:focus,
+        &:active,
+        &.active {
+            color: darken(@theme-primary, 10%);
+        }
+    }
+    .navbar-collapse {
+        border-color: fade(white, 2%);
+    }
+    .navbar-toggle {
+        background-color: none;
+        border-color: rgba(255, 255, 255, 0);
+        text-transform: uppercase;
+        color: #000;
+        font-size: 26px;
+        padding: 0%;
+        margin: 0%;
+        &:hover,
+        &:focus {
+            color: #cb2f30;
+            background-color: transparent;
+        }
+    }
+    .nav {
+        li {
+            a {
+                .heading-font;
+                font-family: Telugu;
+                &:hover,
+                &:focus {
+                    color: @theme-primary;
+                    outline: none;
+                }
+            }
+        }
+    }
+    .navbar-nav>.active>a {
+        border-radius: 0;
+        color: white;
+        background-color: transparent;
+        font-family: TeluguBold;
+    }
+    .navbar-nav>.active>a:hover,
+    .navbar-nav>.active>a:focus {
+        color: white;
+        background-color: transparent;
+        font-family: TeluguBold;
+    }
+}
+
+//customization navigation:
+#navcontainer {
+    margin-left: 6%;
+    margin-right: 5%;
+    padding-left: 0px;
+    padding-right: 0px;
+    width: auto;
+}
+
+#pr25 {
+    cursor: pointer;
+    color: #000;
+    padding-top: 29px;
+}
+
+#babucutom {
+    background-color: transparent;
+}
+
+//HEADERS!!
+#home {
+    .row {
+        margin: 0px;
+        margin-top: 220px;
+        img.brandletter {
+            width: 900px;
+            position: relative;
+            float: left;
+            right: 21px;
+            display:block;
+        }
+        .intro-text {
+            position: absolute;
+            right: 4%;
+            top: 170px;
+            text-align: justify;
+            .headerside {
+                font-family: Telugu;
+                line-height: 200%;
+                z-index: 888;
+                padding-right: 0%;
+                .headtitle {
+                    display:block;
+                    text-transform: uppercase;
+                    color: #000;
+                    font-size: 27px;
+                    line-height: 200%;
+                    letter-spacing: .75px;
+                    span.spanone {
+                        letter-spacing: 2.3px;
+                    }
+                    span.spantwo {
+                        letter-spacing: 4.3px;
+                    }
+                    span.spanthree{
+                        letter-spacing: 0.75px;
+                        color: #383838;
+                        font-size: 15px;
+                        line-height: 100%;
+                        text-transform:none;
+                        display:none;
+                    }
+                }
+                .headtitleresponsive{
+                    display:none;
+                    font-size:18px;
+                    color:#000000;
+                    letter-spacing:0.5px;
+                    text-align:justify;
+                    display:none;
+                }
+                .headbody2 {
+                    letter-spacing: 0.75px;
+                    color: #383838;
+                    font-size: 15px;
+                    span{
+                        display:block;
+                    }
+                    #ourstory {}
+                }
+                .headbody {
+                    display:block;
+                    margin-top: 40px;
+                    text-align: right;
+                    img{
+                        width:35px;
+                        height:30px;
+                    }
+                    #ourstory,
+                    span {
+                        margin-right: 1px;
+                        font-family: Telugu;
+                        font-size: 15px;
+                    }
+                }
+            }
+        }
+        img.brandletterresponsive{
+            display:none;
+        }
+    }
+}
+
+//service page
+section#services {
+    background-color: black;  
+    color: white;
+    height: auto;
+    position: relative;
+    bottom: 55px;
+    padding: 12px 0;
+    margin: 0px;
+    .row {
+        margin: 0px;
+        padding-bottom: 45px;
+        .servicebox {
+            margin: 0px;
+            margin-top: 135px;
+            .section-heading {
+                margin: 0px;
+                font-family: TeluguBold;
+                font-size: 37px;
+                letter-spacing: 0.75px;
+            }
+        }
+    }
+}
+
+.filmbox {
+    list-style-type: none;
+    text-align: left;
+    padding-left: 30%;
+    padding-bottom: 10%;
+    margin-bottom: 4%;
+    font-size: 27px;
+    font-family: Telugu;
+    letter-spacing: 0.53px;
+        span{
+            color: white;
+            background: black;
+            border-bottom: 5px solid #cb2f30;
+        }
+        span:after {
+            content: '_';
+            position: absolute;
+            background: black;
+            color: black;
+        }
+        #film {
+            vertical-align: baseline;
+            width: 31px;
+            height: 31px;
+            position: relative;
+            top: 3px;
+            margin-right: 4%;
+        }
+        #video {
+            width: 42px;
+            height: 30px;
+            vertical-align: middle;
+            margin-right: 4%;
+        }
+        #vr {
+            width: 40px;
+            height: 22px;
+            vertical-align: middle;
+            margin-right: 4%;
+        }
+
+
+    .filmbody {
+        line-height: 400%;
+        font-size: 15px;
+    }
+}
+
+    .progressbar {
+        margin-bottom: 120px;
+        font-family: openSans-Regular;
+        font-size: 15px;
+        letter-spacing: 0px;
+            span{
+            padding:4%; 
+        }
+
+    }
+
+
+
+//videos ///
+#work {
+    padding-top: 0px;
+    .movieintro {
+        padding-top: 0%;
+        margin-bottom: 64px;
+        padding-top: 60px;
+        .section-heading {
+            margin-bottom: 0px;
+            font-family: TeluguBold;
+            font-size: 37px;
+            letter-spacing: 0.75px;
+        }
+        p {
+            font-family: OpenSans-Italic;
+            letter-spacing: 1px;
+        }
+    }
+    .moviebox {
+        padding: 6%;
+        padding-right: 5%;
+        padding-top: 1%;
+        .movietitle {
+            .movieintro {
+                background-image: linear-gradient(#CB2F30, #CB2F30), linear-gradient(#CB2F30, #CB2F30), linear-gradient(white, white), linear-gradient(white, white);
+                background-repeat: no-repeat;
+                background-size: 2px 90%, 25% 2px, 2px 2%, 25% 2px, calc(100% - 8px) calc(100% - 8px);
+                background-position: left top, left top, right bottom, right bottom, 2px 2px;
+                padding: 36px;
+                padding-bottom: 35%;
+                width: 165%;
+                font-size: 15px;
+                line-height: 30px;
+                letter-spacing: 0px;
+                padding-top: 6%;
+                .moviesubject {
+                    padding-bottom: 20%;
+                }
+            }
+        }
+    }
+    .moviewrapper {
+        background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(black, black), linear-gradient(black, black);
+        background-repeat: no-repeat;
+        background-size: 2px 100%, 25% 2px, 2px 70%, 15% 2px, calc(100% - 8px) calc(100% - 8px);
+        background-position: left top, left top, right bottom, right bottom, 2px 2px;
+        .videoWrapper {
+            position: relative;
+            padding-bottom: 56.25%;
+            /* 16:9 */
+            padding-top: 25px;
+            height: 0;
+            margin-top: 4%;
+            iframe {
+                position: absolute;
+                top: 0;
+                left: 0;
+                width: 95%;
+                height: 100%;
+                padding-bottom: 5%;
+            }
+        }
+    }
+}
+
+//second video
+.worktwo {
+    padding: 6%;
+    padding-right: 4%;
+    background-color: black;
+    padding-bottom: 369px;
+    padding-top: 86px;
+    .moviebox {
+        .movietitle {
+            color: white;
+            .movieintro {
+                background-image: linear-gradient(white, white), linear-gradient(white, white), linear-gradient(black, black), linear-gradient(black, black);
+                background-repeat: no-repeat;
+                background-size: 2px 99%, 25% 2px, 2px 50%, 15% 2px, calc(100% - 8px) calc(100% - 8px);
+                background-position: left top, left top, right bottom, right bottom, 2px 2px;
+                padding: 36px;
+                padding-right: 0%;
+                padding-bottom: 0%;
+                font-size: 15px;
+                line-height: 30px;
+                letter-spacing: 0px;
+                padding-top: 6%;
+                .moviesubject {
+                    padding-bottom: 3%;
+                }
+                p {
+                    color: #CB2F30;
+                    font-style: italic;
+                    line-height: 30px;
+                    padding-bottom: 3%;
+                }
+            }
+        }
+    }
+    .moviebox {
+        padding-left: 0%;
+        .moviewrapper {
+            background-image: linear-gradient(black, black), linear-gradient(black, black), linear-gradient(#CB2F30, #CB2F30), linear-gradient(#CB2F30, #CB2F30);
+            background-repeat: no-repeat;
+            background-size: 2px 100%, 25% 2px, 2px 70%, 15% 2px, calc(100% - 8px) calc(100% - 8px);
+            background-position: left top, left top, right bottom, right bottom, 2px 2px;
+            .videoWrapper {
+                position: relative;
+                padding-bottom: 56.25%;
+                padding-top: 25px;
+                height: 0;
+                margin-top: 4%;
+                iframe {
+                    position: absolute;
+                    top: 0;
+                    left: 0;
+                    width: 95%;
+                    height: 100%;
+                    padding-bottom: 5%;
+                }
+            }
+        }
+    }
+}
+
+// Team Section
+.team-member {
+    text-align: center;
+    margin-bottom: 50px;
+    img {
+        margin: 0 auto;
+        border: 7px solid white;
+    }
+    h4 {
+        margin-top: 25px;
+        margin-bottom: 0;
+        text-transform: none;
+    }
+    p {
+        margin-top: 0;
+    }
+}
+
+// Clients Aside
+aside.clients {
+    img {
+        margin: 50px auto;
+    }
+}
+
+// Contact Section
+section#contact {
+    background-color: #f7f7f7;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-image: url("../img/Contact_BackgroundBADO.png");
+    background-size: contain;
+    background-position-y: 55%;
+    .section-heading {
+        font-weight: 700;
+        color: black;
+        padding: 4%;
+        font-size: 37px;
+        padding-bottom: 0%;
+        font-family: Telugu;
+        padding-top: 105px;
+    }
+    .emailaddress {
+        font-size: 12px;
+    }
+    #contactForm {
+        width: 50%;
+        margin-left: 25%;
+    }
+    .form-group {
+        margin-bottom: 25px;
+        input,
+        textarea {
+            padding: 2%;
+            background-color: rgba(171, 171, 171, 0.27);
+            color: black;
+            border: transparent;
+            -webkit-box-shadow: none;
+            box-shadow: none;
+            -webkit-transition: none;
+            -o-transition: border-color ease-in-out .15s, box-shadow ease-in-out .15s;
+        }
+        input.form-control {
+            height: auto;
+        }
+        textarea.form-control {
+            height: 110px;
+        }
+    }
+    .form-control:focus {
+        border-color: @theme-primary;
+        box-shadow: none;
+    }
+     ::-webkit-input-placeholder {
+        .heading-font;
+        font-weight: 700;
+        color: black;
+    }
+     :-moz-placeholder {
+        /* Firefox 18- */
+        .heading-font;
+        font-weight: 700;
+        color: black;
+    }
+     ::-moz-placeholder {
+        /* Firefox 19+ */
+        .heading-font;
+        font-weight: 700;
+        color: black;
+    }
+     :-ms-input-placeholder {
+        .heading-font;
+        font-weight: 700;
+        color: black;
+    }
+    .text-danger {
+        color: @theme-danger;
+    }
+    .contactBtn {
+        padding: 1%;
+        margin-bottom: 15%;
+        padding-left: 10%;
+        padding-right: 10%;
+        background-color: #f7f7f7;
+        color: black;
+        font-size: 14px;
+        font-weight: 800;
+    }
+}
+
+// // Contact Section
+// // Footer
+// footer {
+//     background-color: black;
+//     padding: 66px 0;
+//     text-align: center;
+//     .container {
+//         width: 970px;
+//         span.copyright {
+//             line-height: 40px;
+//             .heading-font;
+//             text-transform: none;
+//         }
+//         ul.quicklinks {
+//             margin-bottom: 0;
+//             line-height: 40px;
+//             .heading-font;
+//             text-transform: none;
+//         }
+//         .socialmedias {
+//             padding: 2%;
+//             padding-top: 4%;
+//             img {
+//                 width: 35px;
+//                 height: 33px;
+//                 position: relative;
+//                 margin: 1%;
+//             }
+//         }
+//     }
+// }
+
+
+// Contact Section
+// Footer
+footer {
+    background-color: black;
+    text-align: center;
+    padding: 2% 0;
+    .container {
+        span.copyright {
+            .heading-font;
+        }
+        ul.quicklinks {
+            .heading-font;
+        }
+        .socialmedias {
+            img {
+                width: 35px;
+                height: 33px;
+                position: relative;
+                margin: 1%;
+            }
+        }
+    }
+}
+
+
+
+
+
+
+
+//footer
+.colorwhite {
+    color: white;
+    font-family: OpenSans-Bold;
+    font-size: 15px;
+}
+
+.teammsg {
+    color: #b1b0b0;
+    list-style-type: none;
+    text-align: left;
+    .title {
+        padding-bottom: 20%;
+        padding-top: 2%;
+    }
+    li {
+        padding: 2%;
+        font-size: 15px;
+        .herf {
+            color: #b1b0b0;
+        }
+        .herf:hover {
+            color: rgb(203, 47, 48);
+            text-decoration: none; 
+        }
+    }
+}
+
+// Highlight Color Customization
+::-moz-selection {
+    text-shadow: none;
+    background: @theme-primary;
+}
+
+::selection {
+    text-shadow: none;
+    background: @theme-primary;
+}
+
+img::selection {
+    background: transparent;
+}
+
+img::-moz-selection {
+    background: transparent;
+}
+
+body {
+    webkit-tap-highlight-color: @theme-primary;
+}
+
+
+//project page
+#project {}
+
+.projectheader {
+        .row {
+            .text-center {
+                .section-heading {
+                    padding-top: 10%;
+                    padding-bottom: 4%;
+                    font-family: TeluguBold;
+                    font-size: 37px;
+                    letter-spacing: 0.75px;
+                }
+            }
+        }
+        .row {
+            .col-lg-12 {
+                .row {
+                    .col-md-4 {
+                        .teambox {}
+                        .leftbox {}
+                        .floatright {}
+                    }
+                }
+            }
+        }
+}
+
+//clients
+.clientsheader {
+    background-color: black;
+    color: white;
+    padding-bottom: 3%;
+    .container {
+        .row {
+            .text-center {
+                .section-heading {
+                    padding-top: 105px;
+                    padding-bottom: 2%;
+                    font-size: 37px;
+                    font-family: TeluguBold;
+                    letter-spacing: 0.75px;
+                }
+            }
+        }
+    }
+    .carousel-inner {
+        .item {
+            text-align: center;
+            img {
+                sdisplay: initial;
+            }
+        }
+    }
+}
+
+//================rewards and hiring//
+.awardbanner {
+    background-color: black;
+    padding-bottom: 131px;
+    padding-top: 104px;
+    padding: 5%;
+    .awardtext {
+        color: white;
+        font-size: 37px;
+        font-family: TeluguBold;
+        letter-spacing: 0.75px;
+        padding-bottom: 40px;
+    }
+    img#awards1440 {
+        background-position: center;
+        background-repeat: no-repeat;
+        width: 100%;
+        height: auto;
+        display:block;
+    }
+    img#awards610 {
+        background-position: center;
+        background-repeat: no-repeat;
+        display: none;
+        width: 100%;
+        height: auto;
+    }
+}
+
+.hiringbanner {
+    padding-top: 50px;
+    background-color: #eff0f1;
+    color: black;
+    padding-bottom: 45px;
+    .hiringtext {
+        font-family: TeluguBold;
+        letter-spacing: 0.75px;
+        font-size: 20px;
+        line-height: 26px;
+        text-align: center;
+    }
+    .underline {
+        margin-top: 27px;
+        position: relative;
+        display: inline-block;
+        font-weight: 700;
+        text-transform: uppercase;
+        font-size: 15px; 
+        color: black;
+        a {
+            color: black;
+            font-family: OpenSans-SemiboldItalic;
+        }
+        a:hover {
+            color: #000;
+            text-decoration: none;
+        }
+    }
+    .underline:after {
+        content: "";
+        position: absolute;
+        left: 9px;
+        bottom: 16px;
+        right: 0;
+        margin: -31px;
+        background: #cb2f30;
+        height: 5px;
+    }
+}
+
+//slides
+.mySlides {
+    display: none
+}
+
+.demo {
+    cursor: pointer
+}
+
+.bigimg {
+    margin-top: -10%;
+    .col-md-9 {
+        .mySlides {
+            width: 100%;
+        }
+    }
+    .col-md-3 {
+        .mynotes {}
+    }
+}
+
+.smallimg {
+    .pickimg {
+        .picture {}
+    }
+}
+
+//
+.carousel-inner1 {
+    padding-left: 30%;
+}
+
+.carousel-inner2 {
+    display: -webkit-inline-box;
+    display: inline-block;
+    width: auto;
+}
+
+.carousel-controlproject .left .right .carousel-control:focus,
+.carousel-control.right,
+.carousel-control.left,
+.carousel-control:hover {
+    background-image: none;
+}
+
+//=======PROJECTS:
+.customizeimg {
+    position: relative;
+    float: right;
+    z-index: 555;
+    top: 50px;
+    margin-bottom: 19%;
+    img {
+        width: 100%;
+    }
+    .filmtitle {
+        font-size: 30px;
+        // font-family:Telugu;
+        color: white;
+        font-weight: 700;
+        img {
+            margin-right: 4%;
+            width: 8%;
+            height: 27px;
+            vertical-align: baseline;
+        }
+    }
+    .filmtitle:before {
+        content: "";
+        position: absolute;
+        width: 41%;
+        border-bottom: 3px solid #cb2f30;
+        top: -25px;
+    }
+    .description {
+        padding: 3%;
+        line-height: 3;
+        font-size: 15px;
+        padding-top: 93px;
+    }
+}
+
+#carousel-example-generic {
+    margin: 20px auto;
+    width: 400px;
+}
+
+.slidersizer {
+    width: 54%;
+    margin-left: 6%;
+    float: left;
+    margin-right: 1%;
+}
+
+.customizedindicator {
+    width: 80%;
+    margin-left: 6%;
+    display: inline-block;
+    li.clearValue {
+        span {
+            img {}
+        }
+    }
+}
+
+.leftClick {
+    img {
+        position: relative;
+        transform: rotate(180);
+        -webkit-transform: rotate(180deg);
+        transform: rotate(180deg);
+        bottom: 103px;
+    }
+}
+
+#carousel-custom {
+    .carousel-indicators {
+        margin: 3%;
+        overflow: hidden;
+        position: static;
+        text-align: left;
+        white-space: nowrap;
+        width: 80%;
+        margin-left: 6%;
+        margin-top: 0%;
+        li {
+            background-color: transparent;
+            -webkit-border-radius: 0;
+            border-radius: 0;
+            display: inline-block;
+            height: auto;
+            margin: 0 !important;
+            width: auto;
+            box-shadow: inset 0 0 0 1000px rgba(224, 46, 46, 0.77);
+            img {
+                display: block;
+                opacity: 0.5;
+                width: 200px;
+                max-width: 100%;
+                height: auto;
+            }
+            .active img {
+                opacity: 1;
+            }
+        }
+        li:hover img {
+            opacity: 0.75;
+        }
+    }
+}
+
+#carousel-custom .carousel-outer {
+    position: relative;
+    .carousel-inner {
+        padding-left: 0%;
+    }
+}
+
+#carousel-custom .carousel-indicators li.active img {
+    opacity: 1;
+}
+
+//-------------ourteam:-------
+.teamheaders {
+    .container {
+        .row {
+            .text-center {
+                .section-heading {
+                    padding-top: 114px;
+                    padding-bottom: 90px;
+                    font-size: 37px;
+                    font-family: TeluguBold;
+                    letter-spacing: 0.75px;
+                }
+            }
+        }
+        .row {
+            .col-lg-12 {
+                .row {
+                    .col-md-4 {
+                        .teambox {
+                            img{
+                                width:215px;
+                            }
+                        }
+                        .leftbox {}
+                        .floatright {}
+                    }
+                }
+            }
+        }
+    }
+}
+
+.teamintro {
+    margin-top: 40px;
+    list-style-type: none;
+    color: black;
+    span.title {
+        margin-bottom: 20px;
+        font-size: 15px;
+        font-family: TeluguBold;
+        letter-spacing: 0.42px;
+        img {
+            width: 30px;
+            height: auto;
+            position: relative;
+            margin-left: 20px;
+            margin-bottom: 8px;
+        }
+    }
+    .description {
+        font-style: italic;
+        margin-bottom: 5%;
+    }
+    .body {
+        margin-bottom: 4%;
+    }
+    .representwork {
+        margin-bottom: 105px;
+    }
+}
+
+@import "responsive980";
